@@ -1,4 +1,4 @@
-apiVersion: eksctl. io/v1alpha5
+apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
@@ -10,3 +10,19 @@ managedNodeGroups:
     instancetype: m5.large
     desiredcapacity: 3
     spot: true
+
+
+# apiVersion: eksctl.io/v1alpha5
+# kind: ClusterConfig
+
+# metadata:
+#   name: expense
+#   region: us-east-1
+
+# managedNodeGroups:
+#   - name: expense
+#     instanceType: m5.large
+#     desiredCapacity: 3
+#     spot: true
+#     # availabilityZones:
+#     # - us-east-1f
