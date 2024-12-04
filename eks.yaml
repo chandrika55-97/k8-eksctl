@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: cluster
+
+metadata:
+  name: expense
+  region: us-east-1
+
+managednodesgroups:
+  - name: ng
+    instancetype: m5.large
+    desiredcapacity: 3
+    spot: true
